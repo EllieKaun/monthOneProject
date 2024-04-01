@@ -8,6 +8,14 @@
     font-family: Ubuntu;
 }
 
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block !important;
+}
+
 body{
     margin: 0;
     margin: auto;
@@ -22,7 +30,6 @@ body{
     top: 0.1px;
     background-color: #fff;
 }
-
 .header{
     display: flex;
     align-items: center;
@@ -34,7 +41,6 @@ body{
 .navbar p{
     margin-right: 40px;
 }
-
 .contacts{
     display: flex;
 }
@@ -48,7 +54,12 @@ body{
 .contactsInfo p{
     margin: 0;
 }
-
+.mobileMenu{
+    display: none;
+}
+.mobileMenuOpened{
+    display: none;
+}
 .hero{
     /* height: 100vh; */
     height: 1000px;
@@ -195,5 +206,11 @@ body{
     }
     .servicesItems{
         flex-direction: column;
+    }
+    .headerWrapper{
+        padding: 8px 0;
+    }
+    .mobileMenu{
+        display: block;
     }
 }
